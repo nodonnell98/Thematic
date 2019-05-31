@@ -7,40 +7,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="Home.css" />
     <link rel="stylesheet" href="Thematic.css" />
-   
+
     <title></title>
 </head>
 <body>
 
-    <nav class="navbar navbar-inverse" style="margin: 0; background-color:cadetblue; color:aliceblue;">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Thematic Test</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-
-                    <li><a href="#">Page 1</a></li>
-                    <li><a href="#">Page 2</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Settings <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Thematic</a></li>
-                            <li>></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <ul class="main main-outcome" id="headerBar">
+        <li class="accent accent-outcome" id="accent1"><a href="#home">Home</a></li>
+        <li class="accent accent-outcome" id="accent2"><a href="#news">News</a></li>
+        <li class="accent accent-outcome" id="accent3"><a href="#contact">Contact</a></li>
+        <li style="float:right" class="accent" id="accent4"><a class="active" href="#about">Settings</a></li>
+    </ul>
 
 
 
@@ -81,14 +58,14 @@
         </div>
     </div>
 
-    <div class="text-container" style="background-color:cadetblue; color:aliceblue;">
+    <div class="text-container text-container-outcome" id="text">
         <p>
             This is some generic text
         </p>
     </div>
 
 
-    <button id="myBtn" onclick="btnClick">Open Modal</button>
+    <button id="myBtn">Open Modal</button>
 
     <div id="myModal" class="modal">
 
@@ -100,43 +77,52 @@
             </div>
             <div class="modal-body">
                 <p>Select a colour theme:</p>
-                <div style="position:relative;">
-                    <ul id="rig">
-                        <li>
-                            <a class="rig-cell" href="About.html" style="padding: 0%; margin: 0%;">
-                                <img class="rig-img" src="Images/Project.jpg">
-                                <span class="rig-overlay"></span>
-                                <span class="rig-text">About me</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="rig-cell" href="Work.html" style="padding: 0%; margin: 0%;">
-                                <img class="rig-img" src="Images/breifcase.jpg">
-                                <span class="rig-overlay"></span>
-                                <span class="rig-text">Work Experience</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="rig-cell" href="Project.html" style="padding: 0%; margin: 0%;">
-                                <img class="rig-img" src="Images/laptop.jpg">
-                                <span class="rig-overlay"></span>
-                                <span class="rig-text">My Projects</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="rig-cell" href="Competition.html" style="padding: 0%; margin: 0%;">
-                                <img class="rig-img" src="Images/medal.jpg">
-                                <span class="rig-overlay"></span>
-                                <span class="rig-text">Competitions</span>
-                            </a>a
-                        </li>
 
+                <div class="imgContainer">
+                    <div class="card" id="action" onclick="ActionTheme">
+                        <a>
+                            <img src="Images/Action.jpg" alt="Avatar" style="width:100%">
+                            <div class="container">
+                                <h4><b>Action</b></h4>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card" id="outcome">
+                        <a>
+                            <img src="Images/Outcome.jpg" alt="Avatar" style="width:100%">
+                            <div class="container">
+                                <h4><b>Outcome</b></h4>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card" id="pusher">
+                        <a>
+                            <img src="Images/Pusher.jpg" alt="Avatar" style="width:100%">
+                            <div class="container">
+                                <h4><b>Pusher</b></h4>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card" id="salsa">
+                        <a>
+                            <img src="Images/Salsa.jpg" alt="Avatar" style="width:100%">
+                            <div class="container">
+                                <h4><b>Salsa</b></h4>
+
+                            </div>
+                        </a>
+                    </div>
                 </div>
+
                 <div>
 
                 </div>
             </div>
-     </div>
+        </div>
+    </div>
 
     <script src="Thematic.js"></script>
 </body>

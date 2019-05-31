@@ -134,32 +134,15 @@
     <Content Include="bin\roslyn\System.Xml.XPath.XDocument.dll" />
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
-    <Content Include="Competition.html" />
     <Content Include="Home.css" />
     <Content Include="Home.html" />
-    <Content Include="Images\background.jpg" />
-    <Content Include="Images\beaniemodel.jpg" />
-    <Content Include="Images\beaniemodel2.jpg" />
-    <Content Include="Images\beaniemonth.jpg" />
-    <Content Include="Images\Beanies\beanie1.jpg" />
-    <Content Include="Images\Beanies\beanie10.jpg" />
-    <Content Include="Images\Beanies\beanie11.jpg" />
-    <Content Include="Images\Beanies\beanie12.jpg" />
-    <Content Include="Images\Beanies\beanie13.jpg" />
-    <Content Include="Images\Beanies\beanie14.jpg" />
-    <Content Include="Images\Beanies\beanie2.jpg" />
-    <Content Include="Images\Beanies\beanie3.jpg" />
-    <Content Include="Images\Beanies\beanie4.jpg" />
-    <Content Include="Images\Beanies\beanie5.jpg" />
-    <Content Include="Images\Beanies\beanie6.jpg" />
-    <Content Include="Images\Beanies\beanie7.jpg" />
-    <Content Include="Images\Beanies\beanie8.jpg" />
-    <Content Include="Images\Beanies\beanie9.jpg" />
+    <Content Include="Images\Action.jpg" />
     <Content Include="Images\Carousel-Image1.jpg" />
     <Content Include="Images\Carousel-Image2.jpg" />
     <Content Include="Images\Carousel-Image3.jpg" />
-    <Content Include="Images\magazine.jpg" />
-    <Content Include="Images\summer_background.jpg" />
+    <Content Include="Images\Outcome.jpg" />
+    <Content Include="Images\Pusher.jpg" />
+    <Content Include="Images\Salsa.jpg" />
     <Content Include="Thematic.css" />
     <Content Include="Thematic.js" />
     <Content Include="Web.config" />
@@ -243,7 +226,6 @@
     <Content Include="bin\roslyn\vbc.rsp" />
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
     <Content Include="bin\roslyn\VBCSCompiler.exe.refresh" />
-    <Content Include="Images\desktop.ini" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
