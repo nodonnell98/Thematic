@@ -1,0 +1,19 @@
+﻿body {
+}
+
+.text-container {
+    width: 100%;
+    height: 50px;
+    background-color: dimgrey;
+    color: antiquewhite;
+    font-size: 35px;
+    text-align: center;
+}
+
+.nav.navbar-nav li a {
+    color: aliceblue;
+}
+
+.navbar-brand{
+    color: aliceblue;
+}

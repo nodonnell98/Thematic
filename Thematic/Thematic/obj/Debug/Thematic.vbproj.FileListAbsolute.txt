@@ -1,0 +1,12 @@
+C:\Users\Niall\Desktop\Repos\Thematic\Thematic\Thematic\bin\Thematic.dll.config
+C:\Users\Niall\Desktop\Repos\Thematic\Thematic\Thematic\bin\Thematic.dll
+C:\Users\Niall\Desktop\Repos\Thematic\Thematic\Thematic\bin\Thematic.pdb
+C:\Users\Niall\Desktop\Repos\Thematic\Thematic\Thematic\bin\Thematic.xml
+C:\Users\Niall\Desktop\Repos\Thematic\Thematic\Thematic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Niall\Desktop\Repos\Thematic\Thematic\Thematic\obj\Debug\Thematic.vbprojResolveAssemblyReference.cache
+C:\Users\Niall\Desktop\Repos\Thematic\Thematic\Thematic\obj\Debug\Thematic.Resources.resources
+C:\Users\Niall\Desktop\Repos\Thematic\Thematic\Thematic\obj\Debug\Thematic.vbproj.GenerateResource.Cache
+C:\Users\Niall\Desktop\Repos\Thematic\Thematic\Thematic\obj\Debug\Thematic.vbproj.CoreCompileInputs.cache
+C:\Users\Niall\Desktop\Repos\Thematic\Thematic\Thematic\obj\Debug\Thematic.dll
+C:\Users\Niall\Desktop\Repos\Thematic\Thematic\Thematic\obj\Debug\Thematic.xml
+C:\Users\Niall\Desktop\Repos\Thematic\Thematic\Thematic\obj\Debug\Thematic.pdb
