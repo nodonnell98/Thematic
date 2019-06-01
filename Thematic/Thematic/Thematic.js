@@ -37,7 +37,7 @@ window.onclick = function(event) {
 
 action.onclick = function ActionTheme() {
 
-    var header = document.getElementById("headerBar");
+   /* var header = document.getElementById("headerBar");
     header.classList.toggle("main-action");
 
     var accent1 = document.getElementById("accent1")
@@ -51,16 +51,36 @@ action.onclick = function ActionTheme() {
 
 
     var text = document.getElementById("text")
-    text.classList.toggle("text-container-action");
+    text.classList.toggle("text-container-action"); */
 
+    let actionTest = document.querySelector('.main');
+    let accentTest = document.querySelectorAll('.accent');
+    alert(accentTest[0].classList);
+
+    for (var i = 0, i < accentTest.length, i++){
+
+    }
+
+
+    var removeMain = actionTest.classList[1];
+    var removeAccent = accentTest[0].classList[1];
+
+    actionTest.classList.remove(removeMain);
+    accentTest[0].classList.remove(removeAccent);
+
+    alert(accentTest[0].classList);
+    actionTest.classList.add("main-action");
+    accentTest[0].classList.add("accent-action");
+
+    alert(accentTest[0].classList);
     modal.style.display = "none";
 }
 
-outcome.onclick = function OutcomeTheme() {
+outcome.onclick = function outcomeTheme() {
 
     var header = document.getElementById("headerBar");
     header.classList.toggle("main-outcome");
-    alert("yo");
+
     var accent1 = document.getElementById("accent1")
     accent1.classList.toggle("accent-outcome");
     var accent2 = document.getElementById("accent2")
@@ -80,6 +100,7 @@ outcome.onclick = function OutcomeTheme() {
 pusher.onclick = function pusherTheme() {
 
     var header = document.getElementById("headerBar");
+    
     header.classList.toggle("main-pusher");
 
     var accent1 = document.getElementById("accent1")

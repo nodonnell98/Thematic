@@ -1,5 +1,4 @@
-﻿body {
-}
+﻿
 
 .modal {
     display: none; /* Hidden by default */
@@ -42,19 +41,8 @@
 /*------------------------------------Themes----------------------------------------*/
 
 
-.main{
-
-}
-
-.accent{
-
-}
-
-.text-container{
-
-}
 /*Outcome*/
-.outcome .accent{
+.accent-outcome{
     background-color: gray;
     color: aliceblue;
 }
@@ -80,41 +68,35 @@
     color: red;
 }
 
-.text-container-action {
-    color: black;
-}
+
 
 /*pusher*/
 
 .accent-pusher {
-    background-color: darkred;
-    color: black;
+    background-color: rebeccapurple;
+    color: aliceblue;
 }
 
 .main-pusher, .text-container-pusher {
-    background-color: black;
-    color: red;
+    background-color: rebeccapurple;
+    color: aliceblue;
 }
 
-.text-container-pusher {
-    color: black;
-}
+
 
 /*salsa*/
 
 .accent-salsa {
-    background-color: darkred;
-    color: black;
+    background-color: indianred;
+    color: palegoldenrod;
 }
 
 .main-salsa, .text-container-salsa {
-    background-color: black;
-    color: red;
+    background-color: darkred;
+    color: palegoldenrod;
 }
 
-.text-container-salsa {
-    color: black;
-}
+
 /*-------------------------------------Card style*---------------------------------*/
 
 
