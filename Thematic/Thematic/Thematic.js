@@ -37,42 +37,27 @@ window.onclick = function(event) {
 
 action.onclick = function ActionTheme() {
 
-   /* var header = document.getElementById("headerBar");
-    header.classList.toggle("main-action");
-
-    var accent1 = document.getElementById("accent1")
-    accent1.classList.toggle("accent-action");
-    var accent2 = document.getElementById("accent2")
-    accent2.classList.toggle("accent-action");
-    var accent3 = document.getElementById("accent3")
-    accent3.classList.toggle("accent-action");
-    var accent4 = document.getElementById("accent4")
-    accent4.classList.toggle("accent-action");
+    let main = document.querySelectorAll('.main');
+    let accent = document.querySelectorAll('.accent');
 
 
-    var text = document.getElementById("text")
-    text.classList.toggle("text-container-action"); */
+    main.forEach(
+        function (currentValue, currentIndex, listObj) {
 
-    let actionTest = document.querySelector('.main');
-    let accentTest = document.querySelectorAll('.accent');
-    alert(accentTest[0].classList);
-
-    for (var i = 0, i < accentTest.length, i++){
-
-    }
+            var remove = currentValue.classList[1];
+            currentValue.classList.remove(remove);
+            currentValue.classList.add("main-action");
+        });
 
 
-    var removeMain = actionTest.classList[1];
-    var removeAccent = accentTest[0].classList[1];
+    accent.forEach(
+        function (currentValue, currentIndex, listObj) {
 
-    actionTest.classList.remove(removeMain);
-    accentTest[0].classList.remove(removeAccent);
+            var removeAccent = currentValue.classList[1];            
+            currentValue.classList.remove(removeAccent);
+            currentValue.classList.add("accent-action");
+        });
 
-    alert(accentTest[0].classList);
-    actionTest.classList.add("main-action");
-    accentTest[0].classList.add("accent-action");
-
-    alert(accentTest[0].classList);
     modal.style.display = "none";
 }
 

@@ -38,6 +38,13 @@
         cursor: pointer;
     }
 
+    .other{
+        width: 100%;
+        height: 20px;
+        font-size: 10px;
+        text-align: center;
+    }
+
 /*------------------------------------Themes----------------------------------------*/
 
 
