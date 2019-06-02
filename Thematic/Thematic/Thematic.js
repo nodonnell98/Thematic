@@ -14,6 +14,10 @@ var salsa = document.getElementById("salsa");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+var themes = ["accent-outcome", "accent-action", "accent-salsa", "accent-pusher"];
+
+var selected = "accent-action"
+
 // When the user clicks on the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
@@ -53,9 +57,22 @@ action.onclick = function ActionTheme() {
     accent.forEach(
         function (currentValue, currentIndex, listObj) {
 
-            var removeAccent = currentValue.classList[1];            
-            currentValue.classList.remove(removeAccent);
-            currentValue.classList.add("accent-action");
+            var classList = currentValue.className.split(/\s+/);
+            alert("currentIndex:    " + currentIndex + classList);
+            for (var i = 0; i < classList.length; i++) {
+                for (var j = 0; j < themes.length; j++) {
+                    if (classList[i] === themes[j]) {
+                        alert("Match found!:   " + classList[i] + " = " + themes[j])
+                        var toRemove = classList[i];
+                        alert("toRemove = " + toRemove)
+                        currentValue.classList.remove(toRemove);
+                        alert(currentValue.classList);
+                        currentValue.classList.add("accent-action");
+                        alert(currentValue.classList);
+                    }
+                }
+            }
+           
         });
 
     modal.style.display = "none";
@@ -63,70 +80,126 @@ action.onclick = function ActionTheme() {
 
 outcome.onclick = function outcomeTheme() {
 
-    var header = document.getElementById("headerBar");
-    header.classList.toggle("main-outcome");
-
-    var accent1 = document.getElementById("accent1")
-    accent1.classList.toggle("accent-outcome");
-    var accent2 = document.getElementById("accent2")
-    accent2.classList.toggle("accent-outcome");
-    var accent3 = document.getElementById("accent3")
-    accent3.classList.toggle("accent-outcome");
-    var accent4 = document.getElementById("accent4")
-    accent4.classList.toggle("accent-outcome");
+    let main = document.querySelectorAll('.main');
+    let accent = document.querySelectorAll('.accent');
 
 
-    var text = document.getElementById("text")
-    text.classList.toggle("text-container-outcome");
+    main.forEach(
+        function (currentValue, currentIndex, listObj) {
+
+            var remove = currentValue.classList[1];
+            currentValue.classList.remove(remove);
+            currentValue.classList.add("main-outcome");
+        });
+
+
+    accent.forEach(
+        function (currentValue, currentIndex, listObj) {
+            var listobj = listObj
+            
+           
+            /*var removeAccent = currentValue.classList[1];
+            currentValue.classList.remove(removeAccent);
+            currentValue.classList.add("accent-outcome");*/
+
+            var classList = currentValue.className.split(/\s+/);
+            alert("currentIndex:    " + currentIndex + classList);
+            for (var i = 0; i < classList.length; i++) {
+                for (var j = 0; j < themes.length; j++) {
+                    if (classList[i] === themes[j]) {
+                        alert("Match found!:   " + classList[i] + " = " + themes[j])
+                        var toRemove = classList[i];
+                        alert("toRemove = " + toRemove)
+                        currentValue.classList.remove(toRemove);
+                        alert(currentValue.classList);
+                        currentValue.classList.add("accent-outcome");
+                        alert(currentValue.classList);
+                    }
+                }
+            }
+        }
+    );
 
     modal.style.display = "none";
 }
 
 pusher.onclick = function pusherTheme() {
 
-    var header = document.getElementById("headerBar");
-    
-    header.classList.toggle("main-pusher");
-
-    var accent1 = document.getElementById("accent1")
-    accent1.classList.toggle("accent-pusher");
-    var accent2 = document.getElementById("accent2")
-    accent2.classList.toggle("accent-pusher");
-    var accent3 = document.getElementById("accent3")
-    accent3.classList.toggle("accent-pusher");
-    var accent4 = document.getElementById("accent4")
-    accent4.classList.toggle("accent-pusher");
+    let main = document.querySelectorAll('.main');
+    let accent = document.querySelectorAll('.accent');
 
 
-    var text = document.getElementById("text")
-    text.classList.toggle("text-container-pusher");
+    main.forEach(
+        function (currentValue, currentIndex, listObj) {
+
+            var remove = currentValue.classList[1];
+            currentValue.classList.remove(remove);
+            currentValue.classList.add("main-pusher");
+        });
+
+
+    accent.forEach(
+        function (currentValue, currentIndex, listObj) {
+
+
+            var classList = currentValue.className.split(/\s+/);
+            alert("currentIndex:    " + currentIndex + classList);
+            for (var i = 0; i < classList.length; i++) {
+                for (var j = 0; j < themes.length; j++) {
+                    if (classList[i] === themes[j]) {
+                        alert("Match found!:   " + classList[i] + " = " + themes[j])
+                        var toRemove = classList[i];
+                        alert("toRemove = " + toRemove)
+                        currentValue.classList.remove(toRemove);
+                        alert(currentValue.classList);
+                        currentValue.classList.add("accent-pusher");
+                        alert(currentValue.classList);
+                    }
+                }
+            }
+        });
 
     modal.style.display = "none";
 }
 
 salsa.onclick = function salsaTheme() {
 
-    var header = document.getElementById("headerBar");
-    header.classList.toggle("main-salsa");
-
-    var accent1 = document.getElementById("accent1")
-    accent1.classList.toggle("accent-salsa");
-    var accent2 = document.getElementById("accent2")
-    accent2.classList.toggle("accent-salsa");
-    var accent3 = document.getElementById("accent3")
-    accent3.classList.toggle("accent-salsa");
-    var accent4 = document.getElementById("accent4")
-    accent4.classList.toggle("accent-salsa");
+    let main = document.querySelectorAll('.main');
+    let accent = document.querySelectorAll('.accent');
 
 
-    var text = document.getElementById("text")
-    text.classList.toggle("text-container-salsa");
+    main.forEach(
+        function (currentValue, currentIndex, listObj) {
+
+            var remove = currentValue.classList[1];
+            currentValue.classList.remove(remove);
+            currentValue.classList.add("main-salsa");
+        });
+
+
+    accent.forEach(
+        function (currentValue, currentIndex, listObj) {
+
+            var classes = currentValue.classList;
+            var classList = currentValue.className.split(/\s+/);
+            alert(classes)
+            alert("currentIndex:    " + currentIndex + classList);
+            for (var i = 0; i < classList.length; i++) {
+                for (var j = 0; j < themes.length; j++) {
+                    if (classList[i] === themes[j]) {
+                        alert("Match found!:   " + classList[i] + " = " + themes[j])
+                        var toRemove = classList[i];
+                        alert("toRemove = " + toRemove)
+                        currentValue.classList.remove(toRemove);
+                        alert(currentValue.classList);
+                        currentValue.classList.add("accent-salsa");
+                        alert(currentValue.classList);
+                    }
+                }
+            }
+        });
 
     modal.style.display = "none";
 }
 
-/*$(document).ready(function () {
-    $('#action').click(function () {
-        $('main').toggleClass('main-outcome main-action');
-    });
-}) */
+
