@@ -14,7 +14,8 @@ var salsa = document.getElementById("salsa");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-var themes = ["accent-outcome", "accent-action", "accent-salsa", "accent-pusher"];
+var accentThemes = ["accent-outcome", "accent-action", "accent-salsa", "accent-pusher"];
+var mainThemes = ["main-outcome", "main-action", "main-salsa", "main-pusher"];
 
 var selected = "accent-action"
 
@@ -48,9 +49,21 @@ action.onclick = function ActionTheme() {
     main.forEach(
         function (currentValue, currentIndex, listObj) {
 
-            var remove = currentValue.classList[1];
-            currentValue.classList.remove(remove);
-            currentValue.classList.add("main-action");
+            var classList = currentValue.className.split(/\s+/);
+            
+            for (var i = 0; i < classList.length; i++) {
+                for (var j = 0; j < mainThemes.length; j++) {
+                    if (classList[i] === mainThemes[j]) {
+                        
+                        var toRemove = classList[i];
+                        
+                        currentValue.classList.remove(toRemove);
+                        
+                        currentValue.classList.add("main-action");
+                        
+                    }
+                }
+            }
         });
 
 
@@ -60,9 +73,9 @@ action.onclick = function ActionTheme() {
             var classList = currentValue.className.split(/\s+/);
             alert("currentIndex:    " + currentIndex + classList);
             for (var i = 0; i < classList.length; i++) {
-                for (var j = 0; j < themes.length; j++) {
-                    if (classList[i] === themes[j]) {
-                        alert("Match found!:   " + classList[i] + " = " + themes[j])
+                for (var j = 0; j < accentThemes.length; j++) {
+                    if (classList[i] === accentThemes[j]) {
+                        alert("Match found!:   " + classList[i] + " = " + accentThemes[j])
                         var toRemove = classList[i];
                         alert("toRemove = " + toRemove)
                         currentValue.classList.remove(toRemove);
@@ -87,9 +100,21 @@ outcome.onclick = function outcomeTheme() {
     main.forEach(
         function (currentValue, currentIndex, listObj) {
 
-            var remove = currentValue.classList[1];
-            currentValue.classList.remove(remove);
-            currentValue.classList.add("main-outcome");
+            var classList = currentValue.className.split(/\s+/);
+            
+            for (var i = 0; i < classList.length; i++) {
+                for (var j = 0; j < mainThemes.length; j++) {
+                    if (classList[i] === mainThemes[j]) {
+                        
+                        var toRemove = classList[i];
+                        
+                        currentValue.classList.remove(toRemove);
+                        
+                        currentValue.classList.add("main-outcome");
+                        
+                    }
+                }
+            }
         });
 
 
@@ -103,17 +128,17 @@ outcome.onclick = function outcomeTheme() {
             currentValue.classList.add("accent-outcome");*/
 
             var classList = currentValue.className.split(/\s+/);
-            alert("currentIndex:    " + currentIndex + classList);
+            
             for (var i = 0; i < classList.length; i++) {
-                for (var j = 0; j < themes.length; j++) {
-                    if (classList[i] === themes[j]) {
-                        alert("Match found!:   " + classList[i] + " = " + themes[j])
+                for (var j = 0; j < accentThemes.length; j++) {
+                    if (classList[i] === accentThemes[j]) {
+                        
                         var toRemove = classList[i];
-                        alert("toRemove = " + toRemove)
+                        
                         currentValue.classList.remove(toRemove);
-                        alert(currentValue.classList);
+                        
                         currentValue.classList.add("accent-outcome");
-                        alert(currentValue.classList);
+                        
                     }
                 }
             }
@@ -132,9 +157,21 @@ pusher.onclick = function pusherTheme() {
     main.forEach(
         function (currentValue, currentIndex, listObj) {
 
-            var remove = currentValue.classList[1];
-            currentValue.classList.remove(remove);
-            currentValue.classList.add("main-pusher");
+            var classList = currentValue.className.split(/\s+/);
+            
+            for (var i = 0; i < classList.length; i++) {
+                for (var j = 0; j < mainThemes.length; j++) {
+                    if (classList[i] === mainThemes[j]) {
+                        
+                        var toRemove = classList[i];
+                        
+                        currentValue.classList.remove(toRemove);
+                        
+                        currentValue.classList.add("main-pusher");
+                        
+                    }
+                }
+            }
         });
 
 
@@ -143,17 +180,17 @@ pusher.onclick = function pusherTheme() {
 
 
             var classList = currentValue.className.split(/\s+/);
-            alert("currentIndex:    " + currentIndex + classList);
+           
             for (var i = 0; i < classList.length; i++) {
-                for (var j = 0; j < themes.length; j++) {
-                    if (classList[i] === themes[j]) {
-                        alert("Match found!:   " + classList[i] + " = " + themes[j])
+                for (var j = 0; j < accentThemes.length; j++) {
+                    if (classList[i] === accentThemes[j]) {
+                        
                         var toRemove = classList[i];
-                        alert("toRemove = " + toRemove)
+                       
                         currentValue.classList.remove(toRemove);
-                        alert(currentValue.classList);
+                       
                         currentValue.classList.add("accent-pusher");
-                        alert(currentValue.classList);
+                       
                     }
                 }
             }
@@ -171,9 +208,21 @@ salsa.onclick = function salsaTheme() {
     main.forEach(
         function (currentValue, currentIndex, listObj) {
 
-            var remove = currentValue.classList[1];
-            currentValue.classList.remove(remove);
-            currentValue.classList.add("main-salsa");
+            var classList = currentValue.className.split(/\s+/);
+            
+            for (var i = 0; i < classList.length; i++) {
+                for (var j = 0; j < mainThemes.length; j++) {
+                    if (classList[i] === mainThemes[j]) {
+                        
+                        var toRemove = classList[i];
+                       
+                        currentValue.classList.remove(toRemove);
+                        
+                        currentValue.classList.add("main-salsa");
+                      
+                    }
+                }
+            }
         });
 
 
@@ -182,18 +231,17 @@ salsa.onclick = function salsaTheme() {
 
             var classes = currentValue.classList;
             var classList = currentValue.className.split(/\s+/);
-            alert(classes)
-            alert("currentIndex:    " + currentIndex + classList);
+            
             for (var i = 0; i < classList.length; i++) {
-                for (var j = 0; j < themes.length; j++) {
-                    if (classList[i] === themes[j]) {
-                        alert("Match found!:   " + classList[i] + " = " + themes[j])
+                for (var j = 0; j < accentThemes.length; j++) {
+                    if (classList[i] === accentThemes[j]) {
+                        
                         var toRemove = classList[i];
-                        alert("toRemove = " + toRemove)
+                        
                         currentValue.classList.remove(toRemove);
-                        alert(currentValue.classList);
+                        
                         currentValue.classList.add("accent-salsa");
-                        alert(currentValue.classList);
+                        
                     }
                 }
             }
