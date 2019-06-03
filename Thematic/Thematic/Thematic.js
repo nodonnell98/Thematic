@@ -14,6 +14,9 @@ var salsa = document.getElementById("salsa");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+var main = document.querySelectorAll('.main');
+var accent = document.querySelectorAll('.accent');
+
 var accentThemes = ["accent-outcome", "accent-action", "accent-salsa", "accent-pusher"];
 var mainThemes = ["main-outcome", "main-action", "main-salsa", "main-pusher"];
 
@@ -42,8 +45,6 @@ window.onclick = function(event) {
 
 action.onclick = function ActionTheme() {
 
-    let main = document.querySelectorAll('.main');
-    let accent = document.querySelectorAll('.accent');
 
 
     main.forEach(
@@ -71,17 +72,12 @@ action.onclick = function ActionTheme() {
         function (currentValue, currentIndex, listObj) {
 
             var classList = currentValue.className.split(/\s+/);
-            alert("currentIndex:    " + currentIndex + classList);
             for (var i = 0; i < classList.length; i++) {
                 for (var j = 0; j < accentThemes.length; j++) {
                     if (classList[i] === accentThemes[j]) {
-                        alert("Match found!:   " + classList[i] + " = " + accentThemes[j])
                         var toRemove = classList[i];
-                        alert("toRemove = " + toRemove)
                         currentValue.classList.remove(toRemove);
-                        alert(currentValue.classList);
                         currentValue.classList.add("accent-action");
-                        alert(currentValue.classList);
                     }
                 }
             }
@@ -122,10 +118,6 @@ outcome.onclick = function outcomeTheme() {
         function (currentValue, currentIndex, listObj) {
             var listobj = listObj
             
-           
-            /*var removeAccent = currentValue.classList[1];
-            currentValue.classList.remove(removeAccent);
-            currentValue.classList.add("accent-outcome");*/
 
             var classList = currentValue.className.split(/\s+/);
             
